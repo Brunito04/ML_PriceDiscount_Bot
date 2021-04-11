@@ -50,7 +50,7 @@ if second_price < first_price:
         connection.sendmail(
             from_addr=my_email,
             to_addrs='bruno2004b@gmail.com',
-            msg=f'Subject:Mercado Libre: Your wish product is now at ${final_price}'
+            msg=f'Subject:Mercado Libre: Your wish product is now at ${final_price}, previous price ${first_price}'
         )
 else:
     final_price = first_price
